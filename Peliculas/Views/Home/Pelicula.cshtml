@@ -1,0 +1,53 @@
+﻿@model Pelicula
+@{
+    ViewData["Title"] = "Pelicula";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col - 6">
+            <h1>@Model.Title</h1>
+            <br />
+            <img class="w-500px h-500px rounded" src="@Model.Poster" alt="Card image cap">
+
+        </div>
+        <div class="col - 6">
+            <p>
+                @Model.Year
+            </p>
+            <p>
+                <b>Director:</b> @Model.Director
+            </p>
+            <p>
+                <b>Genres:</b> @Model.Genre
+            </p>
+            <p>
+                <b>Type:</b> @Model.Type
+            </p>
+            <p>
+                <b>Runtime:</b> @Model.Runtime
+            </p>
+            <p>
+                @Model.Plot
+            </p>
+            <p>
+                <b>Actors:</b> @Model.Actors
+            </p>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col - 6">
+            <p>
+                <b>Released:</b>  @Model.Released
+            </p>
+            <br />
+
+        </div>
+        <div class="col - 6">
+        </div>
+    </div>
+</div>
+
+
