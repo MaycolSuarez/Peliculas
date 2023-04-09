@@ -84,13 +84,14 @@
 {
     @section scripts {
     <script>
-
+        debugger;
         var currentPageString = getCookie("currentPage");
         let currentPage = parseInt(currentPageString);
+        
         if (currentPageString === "") {
             currentPage = 1;
         }
-        var resultsPerPage = 9;
+        var resultsPerPage = 10;
         var totalResults = @Model.totalResults;
         var totalPages = Math.ceil(totalResults / resultsPerPage);
 
@@ -100,6 +101,7 @@
         //funcion para hacer que el paginado sea dinamico con el uso de jquery
         //@@totalPages = total paginas a mostrar.
         function UpdatePagination(totalPages) {
+            debugger;
             var $pagination = $('.pagination');
             $pagination.empty();
 

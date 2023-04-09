@@ -9,6 +9,13 @@ window.onload = function () {
         miElemento.style.display = 'block';
     } 
 };
+
+const miInput = document.getElementById('pelicula');
+miInput.addEventListener('input', function () {
+    debugger;
+    document.cookie = "currentPage=" + 1;
+});
+
 //funcion para hacer el llamado al metodo que consulta todas las peliculas que hagan match con el nombre
 function Busqueda() {
 
