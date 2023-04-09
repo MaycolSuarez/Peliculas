@@ -1,0 +1,23 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.Poster:hover {
+    border-color: #000;
+    box-shadow: 0 0 15px #000;
+}
