@@ -1,0 +1,7 @@
+Podemos pulicar la pagina web en un windows server (IIS).
+
+Para ello podemos copiar la carpeta PeliculasPublish en el servidor, dirigirnos al IIS y añadir una nueva app.
+
+Colocaremos el local path donde hayamos añadido la carpeta, daremos un nombre y deberemos elegir un pol compatible con net 6.0.
+
+Recordar que el servidor tambien debe soportar net 6.0.
